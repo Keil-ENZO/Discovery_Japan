@@ -1,13 +1,21 @@
-@font-face {
-  font-family: "face";
-  src: url(../../fonts/Comfortaa/static/Comfortaa-Bold.ttf);
-}
 *,
 ::after,
 ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: url(../../assets/img/paysage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body {
@@ -20,44 +28,29 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: face, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #e6e8ff;
 }
 
 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #e6e8ff;
   font-size: 15px;
 }
 
 li {
   list-style: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 li a {
   text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #e6e8ff;
-  max-width: 300px;
-  width: 100%;
-  height: 400px;
-  padding: 20px;
-  border-radius: 20px;
-}
-.card p {
-  color: #35363f;
-}
-.card h2 {
-  color: #35363f;
-}
-
-.imgCard {
-  width: 200px;
-  height: 200px;
+a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #e6e8ff;
 }
 
 nav {
@@ -65,6 +58,8 @@ nav {
   justify-content: center;
   border-bottom: 1px dashed #e6e8ff;
   height: 100px;
+  background-color: #35363f;
+  opacity: 0.8;
 }
 nav ul {
   display: flex;
@@ -72,7 +67,7 @@ nav ul {
   justify-content: center;
   padding: 0 20px;
 }
-nav ul li {
+nav ul a {
   padding: 0 50px;
   width: 110%;
   height: 50px;
@@ -83,7 +78,7 @@ nav ul li {
   align-items: center;
   cursor: pointer;
 }
-nav ul li:hover {
+nav ul a:hover {
   background-color: #e6e8ff;
   color: #35363f;
   border-radius: 10px;
@@ -95,12 +90,14 @@ nav ul li:hover {
   padding: 50px;
   border-top: 1px dashed #e6e8ff;
   margin-top: 150px;
+  background-color: #35363f;
 }
 
 header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 100vh;
 }
 
 .banniere {
@@ -108,6 +105,20 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 50px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.start .arrow {
+  background-color: #BE0026;
+  padding: 10px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 1px dashed #e6e8ff;
 }
 
 .title {
@@ -123,18 +134,72 @@ header {
 }
 
 .img {
-  width: 500px;
-  height: 350px;
-  margin: 0 auto;
+  width: 300px;
+  height: 200px;
 }
 
-.cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
-  margin: 150px 50px 50px 50px;
   padding: 50px;
-  border: 1px dashed #e6e8ff;
+}
+main .cuisine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: #35363f;
   border-radius: 20px;
+  border: #e6e8ff dashed 1px;
+}
+main .cuisine .cuisine-content {
+  width: 450px;
+  margin-right: 50px;
+}
+main .cuisine .cuisine-content h2 {
+  margin-bottom: 20px;
+}
+main .paysage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: #35363f;
+  border-radius: 20px;
+  border: #e6e8ff dashed 1px;
+}
+main .paysage .paysage-content {
+  width: 450px;
+  margin-left: 50px;
+  order: 2;
+}
+main .paysage .paysage-content h2 {
+  margin-bottom: 20px;
+}
+main .visite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  margin-top: 100px;
+  background-color: #35363f;
+  border-radius: 20px;
+  border: #e6e8ff dashed 1px;
+}
+main .visite .visite-content {
+  width: 450px;
+  margin-right: 50px;
+}
+main .visite .visite-content h2 {
+  margin-bottom: 20px;
+}
+
+.imgCards {
+  width: 300px;
+  height: 400px;
+  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
 }/*# sourceMappingURL=index.css.map */

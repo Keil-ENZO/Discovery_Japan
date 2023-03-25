@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'title';
-    src: "../../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf";
-}
 
-@font-face {
-    font-family: 'text';
-    src: "../../fonts/Roboto/Roboto-VariableFont_wght.ttf";
-}
 
-$title: 'title', sans-serif;
-$text: 'text', sans-serif;
+$title: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+$text: Verdana, Geneva, Tahoma, sans-serif;;
 $color-primary: #e6e8ff;
 $color-secondary: #35363f;
+$color-tertiary: #BE0026;
 
 *,
 ::after,
@@ -21,9 +14,20 @@ $color-secondary: #35363f;
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-image: url(../../assets/img/paysage.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+  
+}
 body {
     background-color: $color-secondary;
-    // cursor: none;
 }
 
 h1,
@@ -46,8 +50,15 @@ li {
     list-style: none;
     font-family: $text;
 
+
     a {
         text-decoration: none;
         font-family: $text;
     }
+}
+
+a {
+    text-decoration: none;
+    font-family: $text;
+    color: #e6e8ff;
 }

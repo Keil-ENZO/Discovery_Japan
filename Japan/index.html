@@ -1,75 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/index.css" />
     <title>Japon</title>
-    
-  </head>
 
-  <body>
+</head>
+
+<body>
     <header>
-      <div class="banniere" data-aos="fade-right">
-        <h1 class="title">
-          Bienvenue sur mon site pour decouvrir le <span>Japon</span>
-        </h1>
-        <img class="img" src="./assets/img/japan.png" alt="Paysage" />
-      </div>
-      <div class="lien">
-        <nav>
-          <ul>
-            <li>Specialite culinaire</li>
-            <li>Les plus beaux paysages</li>
-            <li>Les endroits cultes</li>
-          </ul>
-        </nav>
-      </div>
+        <div class="banniere">
+            <h1 class="title">
+                DISCOVERING <span>JAPAN</span>
+            </h1>
+            <img class="img" src="./assets/img/japan.png" alt="Paysage" data-aos="fade-right" />
+        </div>
+        <div class="start">
+            <p>To start the adventure click here
+            </p>
+            <a href="#lien"><img class="arrow" src="./assets/img/expand_more_FILL0_wght400_GRAD0_opsz20.svg" alt=""></a>
+
+        </div>
+        <div class="lien" id="lien">
+            <nav>
+                <ul>
+                    <li><a href="#cuisine">Culinaire</a></li>
+                    <li><a href="#paysage">Paysages</a></li>
+                    <li><a href="#visite">A visiter</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-      <div class="cards">
-        
-        <div class="profil card">
-          <img class="imgCard" src="./assets/img/paysage.jpg" alt="" />
-          <p>
-            Venez decouvrir toutes les specialites culinaire du Japon pour vous
-            regalez
-          </p>
-          <h2>Mon profil</h2>
+        <div class="cuisine" id="cuisine">
+            <div class="cuisine-content">
+            <h2><a href="">Cuisine</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
+                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
+                Eos.</p>
+        </div>
+        <img class="imgCards" src="./assets/img/cuisine.jpg" alt="">
         </div>
 
-        <div class="competences card" >
-          <img class="imgCard" src="./assets/img/paysage.jpg" alt="" />
-          <h2>Mes competences</h2>
+        <div class="paysage" id="paysage">
+            <div class="paysage-content">
+            <h2><a href="">Paysage</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
+                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
+                Eos.</p>
+        </div>
+        <img class="imgCards" src="./assets/img/paysageC.jpg" alt="">
         </div>
 
-        <div class="Langage card">
-          <img class="imgCard" src="./assets/img/paysage.jpg" alt="" />
-          <h2>Mes langages</h2>
+        <div class="visite" id="visite">
+            <div class="visite-content">
+            <h2><a href="">A visiter</a></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
+                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
+                Eos.</p>
         </div>
-      </div>
+        <img class="imgCards" src="./assets/img/visite.jpg" alt="">
+        </div>
     </main>
 
     <footer>
-      <div class="footer">
-        <div class="content">
-          <h2>Enzo Keil</h2>
-          <p>Developpeur Front-end</p>
-        </div>
+        <div class="footer">
+            <div class="content">
+                <h2>Enzo Keil</h2>
+                <p>Developpeur Front-end</p>
+            </div>
 
-        <div class="contact">
-          <h2>Contact</h2>
-          <p>enzo.keil06@icloud.com</p>
+            <div class="contact">
+                <h2>Contact</h2>
+                <p>enzo.keil06@icloud.com</p>
+            </div>
         </div>
-      </div>
     </footer>
 
     <script src="./index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
-  </body>
+</body>
+
 </html>
