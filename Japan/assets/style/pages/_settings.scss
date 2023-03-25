@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'title';
+    src: "../../fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf";
+}
+
+@font-face {
+    font-family: 'text';
+    src: "../../fonts/Roboto/Roboto-VariableFont_wght.ttf";
+}
+
+$title: 'title', sans-serif;
+$text: 'text', sans-serif;
+$color-primary: #e6e8ff;
+$color-secondary: #35363f;
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $color-secondary;
+    // cursor: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title;
+    color: $color-primary;
+}
+
+p {
+    font-family: $text;
+    color: $color-primary;
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+    font-family: $text;
+
+    a {
+        text-decoration: none;
+        font-family: $text;
+    }
+}
