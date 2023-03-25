@@ -4,75 +4,45 @@ main {
   justify-content: center;
   align-items: center;
   padding: 50px;
- 
-  .cuisine {
+
+  .card {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 50px;
     margin-top: 100px;
+    max-width: 600px;
+    height: 400px;
     background-color: $color-secondary;
     border-radius: 20px;
     border: $color-primary dashed 1px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
-    .cuisine-content {
+    .content {
         width: 450px;
-        margin-right: 50px;
-
-        h2 {
-            margin-bottom: 20px;
-        }
+        background-color: $color-tertiary ;
+        padding: 20px;
+        border-radius: 20px;
+      h2 {
+        margin-bottom: 20px;
+      }
     }
+  }
+
+  .cuisine {
+    background-image: url(../../assets/img/cuisine.webp);
   }
 
   .paysage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 100px;
-    background-color: $color-secondary;
-    border-radius: 20px;
-    border: $color-primary dashed 1px;
-
-
-    .paysage-content {
-        width: 450px;
-        margin-left: 50px;
-        order: 2;
-
-        h2 {
-            margin-bottom: 20px;
-        }
-    }
+    background-image: url(../../assets/img/paysageC.webp);
   }
 
   .visite {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    margin-top: 100px;
-    background-color: $color-secondary;
-    border-radius: 20px;
-    border: $color-primary dashed 1px;
-
-
-    .visite-content {
-        width: 450px;
-        margin-right: 50px;
-
-        h2 {
-            margin-bottom: 20px;
-        }
-    }
+    background-image: url(../../assets/img/visite.webp);
   }
 }
 
 
-.imgCards {
-    width: 300px;
-    height: 400px;
-    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
-
-}

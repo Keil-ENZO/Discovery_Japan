@@ -10,16 +10,29 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #35363f;
+}
+
 header {
-  background-image: url(../../assets/img/paysage.jpg);
+  background-image: url(../../assets/img/paysage.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
 }
 
-body {
-  background-color: #35363f;
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #35363f;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #BE0026;
+  border-radius: 20px;
 }
 
 h1,
@@ -145,61 +158,37 @@ main {
   align-items: center;
   padding: 50px;
 }
-main .cuisine {
+main .card {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 50px;
   margin-top: 100px;
+  max-width: 600px;
+  height: 400px;
   background-color: #35363f;
   border-radius: 20px;
   border: #e6e8ff dashed 1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
-main .cuisine .cuisine-content {
+main .card .content {
   width: 450px;
-  margin-right: 50px;
+  background-color: #BE0026;
+  padding: 20px;
+  border-radius: 20px;
 }
-main .cuisine .cuisine-content h2 {
+main .card .content h2 {
   margin-bottom: 20px;
+}
+main .cuisine {
+  background-image: url(../../assets/img/cuisine.webp);
 }
 main .paysage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  margin-top: 100px;
-  background-color: #35363f;
-  border-radius: 20px;
-  border: #e6e8ff dashed 1px;
-}
-main .paysage .paysage-content {
-  width: 450px;
-  margin-left: 50px;
-  order: 2;
-}
-main .paysage .paysage-content h2 {
-  margin-bottom: 20px;
+  background-image: url(../../assets/img/paysageC.webp);
 }
 main .visite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  margin-top: 100px;
-  background-color: #35363f;
-  border-radius: 20px;
-  border: #e6e8ff dashed 1px;
-}
-main .visite .visite-content {
-  width: 450px;
-  margin-right: 50px;
-}
-main .visite .visite-content h2 {
-  margin-bottom: 20px;
-}
-
-.imgCards {
-  width: 300px;
-  height: 400px;
-  filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+  background-image: url(../../assets/img/visite.webp);
 }/*# sourceMappingURL=index.css.map */
