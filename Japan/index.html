@@ -1,92 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style/index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Japon</title>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div class="banniere">
-            <h1 class="title">
-                DISCOVERING <span>JAPAN</span>
-            </h1>
-            <img class="img" src="./assets/img/japan.webp" alt="Paysage" data-aos="fade-right" />
-        </div>
-        <div class="start">
-            <p>To start the adventure click here
-            </p>
-            <a href="#lien"><img class="arrow" src="./assets/img/expand_more_FILL0_wght400_GRAD0_opsz20.svg" alt=""></a>
-
-        </div>
-        <div class="lien" id="lien">
-            <nav>
-                <ul>
-                    <li><a href="#cuisine">Culinaire</a></li>
-                    <li><a href="#paysage">Paysages</a></li>
-                    <li><a href="#visite">A visiter</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="banniere">
+        <h1 class="title">DISCOVERING <span>JAPAN</span></h1>
+        <img
+          class="img"
+          src="./assets/img/japan.webp"
+          alt="Paysage"
+          data-aos="fade-right"
+        />
+      </div>
+      <div class="start">
+        <p>To start the adventure click here</p>
+        <a href="#lien"
+          ><img
+            class="arrow"
+            src="./assets/img/expand_more_FILL0_wght400_GRAD0_opsz20.svg"
+            alt=""
+        /></a>
+      </div>
+      <div class="lien" id="lien" data-aos="fade-up">
+        <nav>
+          <ul>
+            <li><a href="#cuisine">Culinaire</a></li>
+            <li><a href="#paysage">Paysages</a></li>
+            <li><a href="#visite">A visiter</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-        <div class="test"></div>
-        <div class="cuisine card" id="cuisine">
-            
-            <div class="cuisine-content content">
+      <div class="content-part">
+
+        <div class="content-card">
+          <div class="plat1 cardImg"></div>
+          <div class="plat2 cardImg"></div>
+        </div>
+
+        <div class="cuisine card" id="cuisine" data-aos="flip-up">
+          <div class="cuisine-content content">
             <h2><a href="">Cuisine</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
-                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
-                Eos.</p>
+          </div>
         </div>
-        
+
+        <div class="content-card">
+          <div class="plat3 cardImg"></div>
+          <div class="plat4 cardImg"></div>
         </div>
-        <div class="test2"></div>
+
+      </div>
+      <div class="content-part">
+        <div class="content-card">
+            <div class="paysage1 cardImg"></div>
+            <div class="paysage2 cardImg"></div>
+          </div>
         <div class="paysage card" id="paysage">
-            <div class="paysage-content content">
+          <div class="paysage-content content">
             <h2><a href="">Paysage</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
-                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
-                Eos.</p>
+          </div>
         </div>
+        <div class="content-card">
+            <div class="paysage3 cardImg"></div>
+            <div class="paysage4 cardImg"></div>
+          </div>
+      </div>
 
+      <div class="content-part">
+        <div class="content-card">
+          <div class="test2"></div>
+          <div class="test"></div>
         </div>
-
         <div class="visite card" id="visite">
-            <div class="visite-content content">
+          <div class="visite-content content">
             <h2><a href="">A visiter</a></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat officia alias facere necessitatibus cum
-                et vel non possimus, aspernatur nihil ea hic aliquam vero repellendus, incidunt eaque cumque sapiente?
-                Eos.</p>
+          </div>
         </div>
+        <div class="content-card">
+          <div class="test2"></div>
+          <div class="test"></div>
         </div>
+      </div>
     </main>
 
     <footer>
-        <div class="footer">
-            <div class="content">
-                <h2>Enzo Keil</h2>
-                <p>Developpeur Front-end</p>
-            </div>
-
-            <div class="contact">
-                <h2>Contact</h2>
-                <p>enzo.keil06@icloud.com</p>
-            </div>
+      <div class="footer">
+        <div class="content">
+          <h2>Enzo Keil</h2>
+          <p>Developpeur Front-end</p>
         </div>
+
+        <div class="contact">
+          <h2>Contact</h2>
+          <p>enzo.keil06@icloud.com</p>
+        </div>
+      </div>
     </footer>
 
     <script src="./index.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+      AOS.init();
     </script>
-</body>
-
+  </body>
 </html>

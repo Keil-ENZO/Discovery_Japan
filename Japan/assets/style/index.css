@@ -135,15 +135,15 @@ header {
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 4vw;
   font-weight: 700;
   text-transform: uppercase;
   max-width: 500px;
   line-height: 60px;
 }
 .title span {
+  font-size: 4vw;
   color: #BE0026;
-  font-size: 2.5rem;
 }
 
 .img {
@@ -158,7 +158,29 @@ main {
   align-items: center;
   padding: 50px;
 }
-main .card {
+main .content-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15%;
+  margin-top: 150px;
+  width: 100%;
+}
+main .content-card .cardImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 2000px;
+  margin-bottom: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main .content-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .content-part .card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,49 +188,74 @@ main .card {
   margin-top: 100px;
   max-width: 600px;
   height: 400px;
-  background-color: #35363f;
   border-radius: 20px;
-  border: #e6e8ff dashed 1px;
+  border: #BE0026 dashed 1px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
+  cursor: pointer;
+  transition: 0.6s ease-in-out;
 }
-main .card .content {
-  width: 450px;
+main .content-part .card .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
   background-color: #BE0026;
-  padding: 20px;
-  border-radius: 20px;
-}
-main .card .content h2 {
-  margin-bottom: 20px;
+  border-radius: 1500px;
 }
 main .cuisine {
-  background-image: url(../../assets/img/cuisine.webp);
+  background-color: #e6e8ff;
 }
 main .paysage {
-  background-image: url(../../assets/img/paysageC.webp);
+  background-color: #e6e8ff;
 }
 main .visite {
-  background-image: url(../../assets/img/visite.webp);
+  background-color: #e6e8ff;
 }
 
-.test {
-  width: 100px;
-  height: 100px;
-  background-image: url(../../assets/img/cuisine.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+.plat1 {
+  background-image: url(../../assets/img/plat1.webp);
+  margin-right: 100px;
 }
 
-.test2 {
-  width: 100px;
-  height: 100px;
-  background-image: url(../../assets/img/paysage.webp);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+.plat2 {
+  background-image: url(../../assets/img/plat2.webp);
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+
+.plat3 {
+  background-image: url(../../assets/img/plat3.webp);
+  margin-left: 35px;
+  margin-bottom: 40px;
+}
+
+.plat4 {
+  background-image: url(../../assets/img/plat4.webp);
+  margin-left: 86px;
+}
+
+.paysage1 {
+  background-image: url(../../assets/img/paysage1.webp);
+  margin-right: 40px;
+  margin-top: 70px;
+}
+
+.paysage2 {
+  background-image: url(../../assets/img/paysage2.webp);
+  margin-right: 95px;
+}
+
+.paysage3 {
+  background-image: url(../../assets/img/paysage3.webp);
+  margin-left: 110px;
+  margin-bottom: 70px;
+}
+
+.paysage4 {
+  background-image: url(../../assets/img/paysage4.webp);
+  margin-left: 30px;
 }/*# sourceMappingURL=index.css.map */
